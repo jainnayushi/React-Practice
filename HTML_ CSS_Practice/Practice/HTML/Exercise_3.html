@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- form action,method
+    fieldset 
+        legend 
+            label for 
+
+            input type(text/password/email/password/date/color/submit), name(jo method me jaata), id(same as for of label), placeholder
+
+            radio - input,label - same name
+            checkbox - input,label - different name 
+            dropdown- label, select(name,id), option(value)
+            datalist - label,input(type nhi list),datalist(id),option(value)
+
+            textarea - name,id,rows,cols -->
+
+
+<body>
+    <h1>Sign Up Form</h1>
+    <form action="" method="">
+        <fieldset>
+            <legend>Form</legend>
+            <label for="first_name"></label>
+            <input type="text" name="first_name" id="first_name" placeholder="First Name">
+            <br><br>
+            <label for="last_name"></label>
+            <input type="text" name="last_name" id="last_name" placeholder="Last Name">
+            <br><br>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <br><br>
+            <label for="password"></label>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <br><br>
+            
+            <!-- Radio Button -->
+            <!-- See position of input and label matters -->
+            <p>Select Gender</p>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <br>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other">
+            <br><br>
+
+            <!-- Checkbox -->
+            <!-- Only "name" is different, which matters b/w radio and checkbox  -->
+            <p>Select your favorite language</p>
+            <input type="checkbox" name="english" id="english">
+            <label for="english">English</label>
+            <br>
+            <input type="checkbox" name="hindi" id="hindi">
+            <label for="hindi">Hindi</label>
+            <br>
+            <input type="checkbox" name="other" id="other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <!-- Dropdown list -->
+            <label for="country">Country</label>
+            <br><br>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="America">America</option>
+                <option value="NOTA">NOTA</option>
+            </select>
+            <br><br>
+
+            <!-- Data List  -->
+            <!-- list===id here -->
+            <label for="browsers">Select your browser </label>
+            <br><br>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Chrome">Chrome</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Edge">Edge</option>
+                <option value="NOTA">NOTA</option>
+            </datalist> 
+            <br><br>
+
+            <!-- Textarea -->
+            <p>Tell us something about yourself</p>
+            <textarea name="about" id="about" cols="30" rows="10" placeholder="Type Here"></textarea>
+            <br><br>
+
+            <!-- Submit -->
+            <input type="submit" value="Submit">
+            <!-- or -->
+            <!-- <button type="submit">Submit</button> -->
+        </fieldset>
+        
+    </form>
+</body>
+</html>

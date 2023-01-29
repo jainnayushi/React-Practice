@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Passions+Conflict&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{}
+
+:root{
+    --primary-color:#000839;
+    --primary-shades:#00020b;
+    --para-color:#80849c;
+    --helper-color:#1264fa;
+    --white:#fff;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    display: inline-block;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+h1,h2,h3,h4{
+    color: var(--primary-color);
+}
+
+.para{
+    /* border: 2px dotted green; */
+    font-size: 1.6rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: var(--para-color);
+}
+
+/* ------------------------------
+header and navbar styling starts
+---------------------------------*/
+.header{
+    /* border: 2px solid red; */
+    height: 9.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5.4rem;
+}
+
+.logo{
+    /* border: 2px solid yellow; */
+    font-size: 2rem;
+    font-weight: bold;
+}
+ /*2 btn ke karan upar neeche ho jaate toh to keep it vertically align use ths */
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3.2rem;
+    font-size:1.5rem;
+    text-transform: uppercase;
+}
+
+.navbar-list .navbar-btn{
+    padding: 1.2rem 2.4rem;
+    background-color: var(--white);
+    border: 1px solid var(--helper-color);
+    color: var(--helper-color);
+    border-radius: 5rem;  
+    transition: all 0.3s ease-in-out;
+    /*1 won't work since width height is not smae so go for height> here >2.4rem */
+}
+
+.navbar-list .navbar-link:hover, 
+.navbar-list .navbar-link:active {
+    color: var(--helper-color);
+}
+
+.navbar-btn:hover,
+.navbar-btn:active{
+    background-color: var(--helper-color);
+    color: var(--white);
+}
+
+.mobile-navbar-icon{
+    font-size: 4rem;
+    color:var(--primary-color)
+}
+
+.mobile-navbar-btn{
+    display: none;
+}
+
+/*3 target by name  */
+.mobile-navbar-icon[name="close"]{
+    display: none;
+}
+
+/* reusable code  */
+.section{
+    padding: 9.6rem 0;
+}
+
+.grid{
+    display: grid;
+    gap:9.6rem
+}
+
+.grid-two-column{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.btn{
+    font-size:1.6rem;
+    text-transform: capitalize;
+    pad;
+}

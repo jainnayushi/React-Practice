@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+
+.p0{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Passions Conflict', cursive;
+    font-size: larger;
+}
+h1{
+    font-size: 40px;
+}
+.p1{
+ line-height: 40px;
+}
